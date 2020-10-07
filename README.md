@@ -1,2 +1,2 @@
 # FindmyFigurine
-Find your favorite figurine. Insight Data Science 2020. 
+Find your fandom. Insight Data Science 2020. 
