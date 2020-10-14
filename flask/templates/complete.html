@@ -1,0 +1,788 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- <link href="../static/cover.css" rel="stylesheet"> -->
+
+    <title>FindmyFigurine</title>
+</head>
+
+<body>
+    <!-- Page Content -->
+    <div class="text-dark container col-9">
+    <!-- Jumbotron Header -->
+    <header class=" jumbotron my-0 p-4">
+    <h2 class="strong">FindmyFigurine<span class="small text-muted">
+    Find your fandom.</span></h2><hr class="my-4">
+    <p class="lead">
+       {% if np.argmax prediction == 0 %}
+	 Your character is <b><span class='results'>Aika Granzchesta!</span></b>
+	   {% if np.argmax prediction == 1 %}
+	 Your character is <b><span class='results'>Aisaka Taiga!</span></b>
+	   {% if np.argmax prediction == 2 %}
+	 Your character is <b><span class='results'>Akihime Sumomo!!</span></b>
+	   {% if np.argmax prediction == 3 %}
+	 Your character is <b><span class='results'>Akiyama Mio!</span></b>
+	   {% if np.argmax prediction == 4 %}
+	 Your character is <b><span class='results'>Akizuki Ritsuko!</span></b>
+	   {% if np.argmax prediction == 5 %}
+	 Your character is <b><span class='results'>Alice Margatroid!</span></b>
+	   {% if np.argmax prediction == 6 %}
+	 Your character is <b><span class='results'>Allen Walker!</span></b>
+	   {% if np.argmax prediction == 7 %}
+	 Your character is <b><span class='results'>Amami Haruka!</span></b>
+	   {% if np.argmax prediction == 8 %}
+	 Your character is <b><span class='results'>Ana Coppola!</span></b>
+	   {% if np.argmax prediction == 9 %}
+	 Your character is <b><span class='results'>Andou Mahoro!</span></b>
+	   {% if np.argmax prediction == 10 %}
+	 Your character is <b><span class='results'>Arcueid Brunestud!</span></b>  
+	   {% if np.argmax prediction == 11 %}
+	 Your character is <b><span class='results'>Asagiri Mai!</span></b> 
+		{% if np.argmax prediction == 12 %}
+	 Your character is <b><span class='results'>Asahina Mikuru!</span></b>  
+		{% if np.argmax prediction == 13 %}
+	 Your character is <b><span class='results'>Asakura Otome!</span></b>  
+		{% if np.argmax prediction == 14 %}
+	 Your character is <b><span class='results'>Asakura Yume!</span></b>  
+		{% if np.argmax prediction == 15 %}
+	 Your character is <b><span class='results'>Ayanami Rei!</span></b>  
+		{% if np.argmax prediction == 16 %}
+	 Your character is <b><span class='results'>Ayasaki Hayate!</span></b>  
+		{% if np.argmax prediction == 17 %}
+	 Your character is <b><span class='results'>Belldandy!</span></b>  
+		{% if np.argmax prediction == 18 %}
+	 Your character is <b><span class='results'>Black Rock Shooter!</span></b>  
+		{% if np.argmax prediction == 19 %}
+	 Your character is <b><span class='results'>C.C!</span></b>  
+		{% if np.argmax prediction == 20 %}
+	 Your character is <b><span class='results'>Canal Volphied!!</span></b>  
+		{% if np.argmax prediction == 21 %}
+	 Your character is <b><span class='results'>Caro Ru Lushe!</span></b>  
+		{% if np.argmax prediction == 22 %}
+	 Your character is <b><span class='results'>Chii!</span></b>  
+		{% if np.argmax prediction == 23 %}
+	 Your character is <b><span class='results'>Cirno!</span></b>  
+	 	{% if np.argmax prediction == 24 %}
+	 Your character is <b><span class='results'>Corticarte Apa Lagranges!</span></b>  
+	 	{% if np.argmax prediction == 25 %}
+	 Your character is <b><span class='results'>Daidouji Tomoyo!</span></b>  
+	 	{% if np.argmax prediction == 26 %}
+	 Your character is <b><span class='results'>Enma Ai!</span></b>  
+	 	{% if np.argmax prediction == 27 %}
+	 Your character is <b><span class='results'>Erio Mondial!</span></b>  
+	 	{% if np.argmax prediction == 28 %}
+	 Your character is <b><span class='results'>Fate Testarossa!</span></b>  
+	 	{% if np.argmax prediction == 29 %}
+	 Your character is <b><span class='results'>Feena Fam Earthlight!</span></b>  
+	 	{% if np.argmax prediction == 30 %}
+	 Your character is <b><span class='results'>Flandre Scarlet!</span></b>  
+	 	{% if np.argmax prediction == 31 %}
+	 Your character is <b><span class='results'>Fujibayashi Kyou!!</span></b>  
+	 	{% if np.argmax prediction == 32 %}
+	 Your character is <b><span class='results'>Fukuzawa Yumi!</span></b>  
+	 	{% if np.argmax prediction == 33 %}
+	 Your character is <b><span class='results'>Furude Rika!</span></b>  
+	 	{% if np.argmax prediction == 34 %}
+	 Your character is <b><span class='results'>Furukawa Nagisa!</span></b>  
+	 	{% if np.argmax prediction == 35 %}
+	 Your character is <b><span class='results'>Fuyou Kaede!</span></b>  
+	 	{% if np.argmax prediction == 36 %}
+	 Your character is <b><span class='results'>Golden Darkness!</span></b>
+	 	{% if np.argmax prediction == 37 %}
+	 Your character is <b><span class='results'>Hakurei Reimu!</span></b>  
+	 	{% if np.argmax prediction == 38 %}
+	 Your character is <b><span class='results'>Hatsune Miku!</span></b>  
+	 	{% if np.argmax prediction == 39 %}
+	 Your character is <b><span class='results'>Hayama Mizuki!</span></b>  
+	 	{% if np.argmax prediction == 40 %}
+	 Your character is <b><span class='results'>Hayase Mitsuki!</span></b>  
+	 	{% if np.argmax prediction == 41 %}
+	 Your character is <b><span class='results'>Hiiragi Kagami!</span></b>  
+	 	{% if np.argmax prediction == 42 %}
+	 Your character is <b><span class='results'>Hiiragi Tsukasa!</span></b>  
+	 	{% if np.argmax prediction == 43 %}
+	 Your character is <b><span class='results'>Hinamori Amu!</span></b>  
+	 	{% if np.argmax prediction == 44 %}
+	 Your character is <b><span class='results'>Hirasawa Yui!</span></b>  
+	 	{% if np.argmax prediction == 45 %}
+	 Your character is <b><span class='results'>Horo!</span></b>  
+	 	{% if np.argmax prediction == 46 %}
+	 Your character is <b><span class='results'>Houjou Reika!</span></b>  
+	 	{% if np.argmax prediction == 47 %}
+	 Your character is <b><span class='results'>Houjou Satoko!</span></b>  
+	 	{% if np.argmax prediction == 48 %}
+	 Your character is <b><span class='results'>Ibuki Fuuko!</span></b>  
+	 	{% if np.argmax prediction == 49 %}
+	 Your character is <b><span class='results'>Ichinose Kotomi!</span></b>  
+		{% if np.argmax prediction == 50 %}
+	 Your character is <b><span class='results'>Ikari Shinji!</span></b> 
+	 	{% if np.argmax prediction == 51 %}
+	 Your character is <b><span class='results'>Illyasviel Von Einzbern!</span></b> 
+	 	{% if np.argmax prediction == 52 %}
+	 Your character is <b><span class='results'>Ito Chika!</span></b> 
+	 	{% if np.argmax prediction == 53 %}
+	 Your character is <b><span class='results'>Ito Nobue!</span></b> 
+	 	{% if np.argmax prediction == 54 %}
+	 Your character is <b><span class='results'>Izayoi Sakuyae!</span></b> 
+	 	{% if np.argmax prediction == 55 %}
+	 Your character is <b><span class='results'>Izumi Konata!</span></b> 
+	 	{% if np.argmax prediction == 56 %}
+	 Your character is <b><span class='results'>Kagamine Len!</span></b> 
+	 	{% if np.argmax prediction == 57 %}
+	 Your character is <b><span class='results'>Kagamine Rin!</span></b> 
+	 	{% if np.argmax prediction == 58 %}
+	 Your character is <b><span class='results'>Kagurazaka Asuna!</span></b> 
+	 	{% if np.argmax prediction == 59 %}
+	 Your character is <b><span class='results'>IKallen Stadtfeld!</span></b> 
+	 	{% if np.argmax prediction == 60 %}
+	 Your character is <b><span class='results'>Kamikita Komari!</span></b> 
+	 	{% if np.argmax prediction == 61 %}
+	 Your character is <b><span class='results'>Kanu!</span></b> 
+	 	{% if np.argmax prediction == 62 %}
+	 Your character is <b><span class='results'>Katagiri Yuuhi!</span></b> 
+	 	{% if np.argmax prediction == 63 %}
+	 Your character is <b><span class='results'>Katsura Hinagiku!</span></b> 
+	 	{% if np.argmax prediction == 64 %}
+	 Your character is <b><span class='results'>Katsura Kotonoha!</span></b> 
+	 	{% if np.argmax prediction == 65 %}
+	 Your character is <b><span class='results'>Kawashima Ami!</span></b> 
+	 	{% if np.argmax prediction == 66 %}
+	 Your character is <b><span class='results'>Kikuchi Makoto!</span></b> 
+	 	{% if np.argmax prediction == 67 %}
+	 Your character is <b><span class='results'>Kinomoto Sakura!</span></b> 
+	 	{% if np.argmax prediction == 68 %}
+	 Your character is <b><span class='results'>Kirisame Marisa!</span></b> 
+	 	{% if np.argmax prediction == 69 %}
+	 Your character is <b><span class='results'>Kisaragi Chihaya!</span></b> 
+	 	{% if np.argmax prediction == 70 %}
+	 Your character is <b><span class='results'>Kobayakawa Yutaka!</span></b> 
+	 	{% if np.argmax prediction == 71 %}
+	 Your character is <b><span class='results'>Kochiya Sanae!</span></b> 
+	 	{% if np.argmax prediction == 72 %}
+	 Your character is <b><span class='results'>Koizumi Itsuki!</span></b> 
+	 	{% if np.argmax prediction == 73 %}
+	 Your character is <b><span class='results'>Komaki Manaka!"</span></b> 
+	 	{% if np.argmax prediction == 74 %}
+	 Your character is <b><span class='results'>Konpaku Youmu!</span></b> 
+	 	{% if np.argmax prediction == 75 %}
+	 Your character is <b><span class='results'>Kotegawa Yui!</span></b> 
+	 	{% if np.argmax prediction == 76 %}
+	 Your character is <b><span class='results'>Kotobuki Tsumugi!</span></b>
+		{% if np.argmax prediction == 77 %}
+	 Your character is <b><span class='results'>Kousaka Tamaki!</span></b> 
+		{% if np.argmax prediction == 78 %}
+	 Your character is <b><span class='results'>Kururugi Suzaku!</span></b> 
+		{% if np.argmax prediction == 79 %}
+	 Your character is <b><span class='results'>Kusugawa Sasara!</span></b> 
+		{% if np.argmax prediction == 80 %}
+	 Your character is <b><span class='results'>Kyon!</span></b> 
+		{% if np.argmax prediction == 81 %}
+	 Your character is <b><span class='results'>Lala Satalin Deviluke!</span></b> 
+		{% if np.argmax prediction == 82 %}
+	 Your character is <b><span class='results'>Lelouch Lamperouge!</span></b> 
+		{% if np.argmax prediction == 83 %}
+	 Your character is <b><span class='results'>Li Syaoran!</span></b> 
+		{% if np.argmax prediction == 84 %}
+	 Your character is <b><span class='results'>Lisianthus!</span></b> 
+		{% if np.argmax prediction == 85 %}
+	 Your character is <b><span class='results'>Louise!</span></b> 
+		{% if np.argmax prediction == 86 %}
+	 Your character is <b><span class='results'>Maka Albarn!</span></b> 
+		{% if np.argmax prediction == 87 %}
+	 Your character is <b><span class='results'>Maria!</span></b> 
+		{% if np.argmax prediction == 88 %}
+	 Your character is <b><span class='results'>Matou Sakura!</span></b> 
+		{% if np.argmax prediction == 89 %}
+	 Your character is <b><span class='results'>Matsuoka Miu!</span></b>
+		{% if np.argmax prediction == 90 %}
+	 Your character is <b><span class='results'>Megurine Luka!</span></b>
+		{% if np.argmax prediction == 91 %}
+	 Your character is <b><span class='results'>Melon Chan!</span></b> 
+		{% if np.argmax prediction == 92 %}
+	 Your character is <b><span class='results'>Midori!</span></b> 
+		{% if np.argmax prediction == 93 %}
+	 Your character is <b><span class='results'>Mifeulle Sakuraba!</span></b> 
+		{% if np.argmax prediction == 94 %}
+	 Your character is <b><span class='results'>Minamoto Chizuru!</span></b> 
+		{% if np.argmax prediction == 95 %}
+	 Your character is <b><span class='results'>Minase Iori!</span></b> 
+		{% if np.argmax prediction == 96 %}
+	 Your character is <b><span class='results'>Miura Azusa!</span></b> 
+		{% if np.argmax prediction == 97 %}
+	 Your character is <b><span class='results'>Miyafuji Yoshika!</span></b> 
+		{% if np.argmax prediction == 98 %}
+	 Your character is <b><span class='results'>Miyamura Miyako!</span></b> 
+		{% if np.argmax prediction == 99 %}
+	 Your character is <b><span class='results'>Mizunashi Akari!</span></b> 
+	 	{% if np.argmax prediction == 100 %}
+	 Your character is <b><span class='results'>Nagase Minato!</span></b> 
+		{% if np.argmax prediction == 101 %}
+	 Your character is <b><span class='results'>Nagato Yuki!</span></b>
+		{% if np.argmax prediction == 102 %}
+	 Your character is <b><span class='results'>Nagi!</span></b>
+		{% if np.argmax prediction == 103 %}
+	 Your character is <b><span class='results'>Nakano Azusa!</span></b>
+		{% if np.argmax prediction == 104 %}
+	 Your character is <b><span class='results'>Nanael!</span></b>
+		{% if np.argmax prediction == 105 %}
+	 Your character is <b><span class='results'>Natsume Rin!</span></b>
+		{% if np.argmax prediction == 106 %}
+	 Your character is <b><span class='results'>Nerine!</span></b>
+		{% if np.argmax prediction == 107 %}
+	 Your character is <b><span class='results'>Nia!/span></b>
+		{% if np.argmax prediction == 108 %}
+	 Your character is <b><span class='results'>Njihara Ink!</span></b>
+		{% if np.argmax prediction == 109 %}
+	 Your character is <b><span class='results'>Nogizaka Haruka!</span></b>
+		{% if np.argmax prediction == 110 %}
+	 Your character is <b><span class='results'>Noumi Kudryavka!</span></b>
+		{% if np.argmax prediction == 111 %}
+	 Your character is <b><span class='results'>Nunnally Lamperouge!</span></b>
+		{% if np.argmax prediction == 112 %}
+	 Your character is <b><span class='results'>Ogasawara Sachiko!</span></b>
+		{% if np.argmax prediction == 113 %}
+	 Your character is <b><span class='results'>Okazaki Tomoya!</span></b>
+		{% if np.argmax prediction == 114 %}
+	 Your character is <b><span class='results'>Pastel Inke!</span></b>
+		{% if np.argmax prediction == 115 %}
+	 Your character is <b><span class='results'>Patchouli Knowledge!</span></b>
+		{% if np.argmax prediction == 116 %}
+	 Your character is <b><span class='results'>Primula!</span></b> 
+		{% if np.argmax prediction == 117 %}
+	 Your character is <b><span class='results'>Ranka Lee!</span></b> 
+		{% if np.argmax prediction == 118 %}
+	 Your character is <b><span class='results'>Reina!</span></b> 
+		{% if np.argmax prediction == 119 %}
+	 Your character is <b><span class='results'>Reinforce Zwei!</span></b> 
+		{% if np.argmax prediction == 120 %}
+	 Your character is <b><span class='results'>Reisen Udongein Inaba!</span></b> 
+		{% if np.argmax prediction == 121 %}
+	 Your character is <b><span class='results'>Remilia Scarlet!</span></b> 
+		{% if np.argmax prediction == 122 %}
+	 Your character is <b><span class='results'>Rollo Lamperouge!</span></b> 
+		{% if np.argmax prediction == 123 %}
+	 Your character is <b><span class='results'>Ryougi Shiki!</span></b> 
+		{% if np.argmax prediction == 124 %}
+	 Your character is <b><span class='results'>Ryuuguu Rena!</span></b> 
+		{% if np.argmax prediction == 125 %}
+	 Your character is <b><span class='results'>Saber!</span></b> 
+		{% if np.argmax prediction == 126 %}
+	 Your character is <b><span class='results'>Saigyouji Yuyuko!</span></b> 
+		{% if np.argmax prediction == 127 %}
+	 Your character is <b><span class='results'>Sairenji Haruna!</span></b> 
+		{% if np.argmax prediction == 128 %}
+	 Your character is <b><span class='results'>Sakagami Tomoyo!</span></b> 
+		{% if np.argmax prediction == 129 %}
+	 Your character is <b><span class='results'>Sakai Yuuji!</span></b> 
+		{% if np.argmax prediction == 130 %}
+	 Your character is <b><span class='results'>Sanzenin Nagi!</span></b> 
+		{% if np.argmax prediction == 131 %}
+	 Your character is <b><span class='results'>Saotome Alto!</span></b> 
+		{% if np.argmax prediction == 132 %}
+	 Your character is <b><span class='results'>Sendou Erika!</span></b> 
+		{% if np.argmax prediction == 133 %}
+	 Your character is <b><span class='results'>Seto San!</span></b> 
+		{% if np.argmax prediction == 134 %}
+	 Your character is <b><span class='results'>Setsuna F. Seiei!</span></b>
+		{% if np.argmax prediction == 135 %}
+	 Your character is <b><span class='results'>Shameimaru Aya!</span></b> 
+		{% if np.argmax prediction == 136 %}
+	 Your character is <b><span class='results'>Shana!</span></b> 
+		{% if np.argmax prediction == 137 %}
+	 Your character is <b><span class='results'>Sheryl Nome!</span></b> 
+		{% if np.argmax prediction == 138 %}
+	 Your character is <b><span class='results'>Shidou Hikaru!</span></b> 
+		{% if np.argmax prediction == 139 %}
+	 Your character is <b><span class='results'>Shigure Asa!</span></b> 
+		{% if np.argmax prediction == 140 %}
+	 Your character is <b><span class='results'>Shihou Matsuri!</span></b> 
+		{% if np.argmax prediction == 141 %}
+	 Your character is <b><span class='results'>Shindou Chihiro!</span></b> 
+		{% if np.argmax prediction == 142 %}
+	 Your character is <b><span class='results'>Shindou Kei!</span></b> 
+		{% if np.argmax prediction == 143 %}
+	 Your character is <b><span class='results'>Shinku!</span></b> 
+		{% if np.argmax prediction == 144 %}
+	 Your character is <b><span class='results'>Shirakawa Kotori!</span></b> 
+		{% if np.argmax prediction == 145 %}
+	 Your character is <b><span class='results'>Shirley Fenette!</span></b> 
+		{% if np.argmax prediction == 146 %}
+	 Your character is <b><span class='results'>Shirou Kamui!</span></b> 
+		{% if np.argmax prediction == 147 %}
+	 Your character is <b><span class='results'>Siesta!</span></b>  
+		{% if np.argmax prediction == 148 %}
+	 Your character is <b><span class='results'>Sonozaki Mion!</span></b> 
+		{% if np.argmax prediction == 149 %}
+	 Your character is <b><span class='results'>Sonsaku Hakufu!</span></b> 
+		{% if np.argmax prediction == 150 %}
+	 Your character is <b><span class='results'>Souryuu Asuka Langley!</span></b> 
+		{% if np.argmax prediction == 151 %}
+	 Your character is <b><span class='results'>Subaru Nakajima!</span></b> 
+		{% if np.argmax prediction == 152 %}
+	 Your character is <b><span class='results'>Suigintou!</span></b> 
+		{% if np.argmax prediction == 153 %}
+	 Your character is <b><span class='results'>Suzumiya Akane!</span></b> 
+		{% if np.argmax prediction == 154 %}
+	 Your character is <b><span class='results'>Suzumiya Haruhi!</span></b> 
+		{% if np.argmax prediction == 155 %}
+	 Your character is <b><span class='results'>Suzumiya Haruka!</span></b> 
+		{% if np.argmax prediction == 156 %}
+	 Your character is <b><span class='results'>Tainaka Ritsu!</span></b> 
+		{% if np.argmax prediction == 157 %}
+	 Your character is <b><span class='results'>Takamachi Nanoha!</span></b> 
+		{% if np.argmax prediction == 158 %}
+	 Your character is <b><span class='results'>Takara Miyuki!</span></b> 
+		{% if np.argmax prediction == 159 %}
+	 Your character is <b><span class='results'>Takatsuki Yayoi!</span></b> 
+		{% if np.argmax prediction == 160 %}
+	 Your character is <b><span class='results'>Teana Lanster!</span></b> 
+		{% if np.argmax prediction == 161 %}
+	 Your character is <b><span class='results'>Tohsaka Rin!</span></b> 
+		{% if np.argmax prediction == 162 %}
+	 Your character is <b><span class='results'>Tsukimura Mayu!</span></b> 
+		{% if np.argmax prediction == 163 %}
+	 Your character is <b><span class='results'>Tsuruya!</span></b> 
+		{% if np.argmax prediction == 164 %}
+	 Your character is <b><span class='results'>Vita!</span></b> 
+		{% if np.argmax prediction == 165 %}
+	 Your character is <b><span class='results'>Vivio!</span></b> 
+		{% if np.argmax prediction == 166 %}
+	 Your character is <b><span class='results'>Yagami Hayate!</span></b> 
+		{% if np.argmax prediction == 167 %}
+	 Your character is <b><span class='results'>Yakumo Yukari!</span></b> 
+		{% if np.argmax prediction == 168 %}
+	 Your character is <b><span class='results'>Yoko!</span></b> 
+		{% if np.argmax prediction == 169 %}
+	 Your character is <b><span class='results'>Yoshida Kazumi!</span></b> 
+		{% if np.argmax prediction == 170 %}
+	 Your character is <b><span class='results'>Yuno!</span></b> 
+		{% if np.argmax prediction == 171 %}
+	 Your character is <b><span class='results'>Yuuki Mikan!</span></b> 
+		{% if np.argmax prediction == 172 %}
+	 Your character is <b><span class='results'>Yuzuhara Konomi!</span></b> 	 
+      {% elif prediction %} 
+	Sorry, this is not an available character.
+	
+      {% endif %}
+
+    </p>
+    </header>
+
+    <div id="main">
+    <align=center>
+    <div style="height:12px;"></div>
+
+	{% if  np.argmax == 0 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ Aika Granzchesta: }} <a href=" {{ Aika Granzchesta }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ Aika Granzchesta: }} <a href=" {{ Aika Granzchesta }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 1 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 1: }} <a href=" {{ 1_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 1: }} <a href=" {{ 1_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 2 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 2: }} <a href=" {{ 2_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 2: }} <a href=" {{ 2_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 3 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 3: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 3: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 4 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 4 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 5 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 6 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 7 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 8 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 9 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 10 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 11 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 12 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 13 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 14 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 15 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 16 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 17 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 18 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 19 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 20 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 21 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 22 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 23 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 24 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 25 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 26 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 27 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 28 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 29 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 30 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 31 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 32 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 33 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 34 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 35 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 36 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 37 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 38 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 39 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	
+	{% if  np.argmax == 40 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 41 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 42 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 43 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 44 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 45 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 46 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 47 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 48 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 49 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 50 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+	
+	{% if  np.argmax == 51 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+		
+	{% if  np.argmax == 52 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+		
+	{% if  np.argmax == 53 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+		
+	{% if  np.argmax == 54 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+		
+	{% if  np.argmax == 55 %}
+	
+		<b>Here are links to purchase a figurine!</b></br>
+		<b> Link 1: </b> {{ 0: }} <a href=" {{ 0_1 }} " target="_blank">(link)</a></br>
+		<b> Link 2: </b> {{ 0: }} <a href=" {{ 0_2 }} " target="_blank">(link)</a></br>
+		Enjoy!</br>
+
+     {% endif %}
+     <div style="height:10px;"></div>
+     <a href="{{ url_for('upload_file') }}">Try another
+     photo!</a><br>
+     </align=center></div>
+</body>
+</html>
